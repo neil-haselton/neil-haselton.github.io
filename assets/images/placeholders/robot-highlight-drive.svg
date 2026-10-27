@@ -1,0 +1,4 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 760" role="img" aria-labelledby="title desc">
+  <title id="title">Placeholder drivetrain subsystem highlight</title><desc id="desc">Transparent aligned overlay highlighting the drive wheels.</desc>
+  <g stroke="#3178C6" stroke-width="12" fill="#3178C6" fill-opacity=".72"><ellipse cx="365" cy="535" rx="44" ry="73"/><ellipse cx="850" cy="535" rx="44" ry="73"/><ellipse cx="365" cy="535" rx="14" ry="34" fill="#edf4fb"/><ellipse cx="850" cy="535" rx="14" ry="34" fill="#edf4fb"/></g>
+</svg>

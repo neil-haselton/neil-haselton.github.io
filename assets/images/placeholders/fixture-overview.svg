@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 760" role="img" aria-labelledby="title desc">
+  <title id="title">Placeholder workholding fixture concept</title><desc id="desc">Illustrative sample drawing, not a real engineering project.</desc>
+  <rect width="1200" height="760" fill="#e8edf2"/><path d="M0 570 1200 260v500H0z" fill="#e0e6ed"/>
+  <g stroke="#2b5e96" stroke-width="5" fill="none" stroke-linejoin="round">
+    <path d="m220 460 400-146 380 128-400 160z" fill="#b8cbe0"/><path d="m220 460v55l380 142v-55M1000 442v54L600 657" fill="#92afcf"/>
+    <path d="m335 423 270-99 285 96-276 105z" fill="#f1f4f7"/><path d="m335 423v31l279 105v-34M890 420v31l-276 108" fill="#d6e0ea"/>
+    <path d="m390 388 30-63 87-32 29 58M740 438l28-70 90-33 31 62" fill="#3178C6"/>
+    <circle cx="400" cy="480" r="13" fill="#2b5e96"/><circle cx="785" cy="608" r="13" fill="#2b5e96"/><circle cx="931" cy="462" r="13" fill="#2b5e96"/>
+    <path d="m310 550-60 23m697-8 78-28M570 282l2-66m-22 0h44" stroke-width="3"/>
+  </g>
+  <g fill="#35485e" font-family="Arial,sans-serif"><text x="62" y="78" font-size="21" letter-spacing="5">SAMPLE ARTWORK · NOT A REAL PROJECT</text><text x="64" y="690" font-size="16" letter-spacing="3">WORKHOLDING FIXTURE / CONCEPT VIEW</text></g>
+  <path d="M64 108h1070" stroke="#a4b4c5" stroke-width="2"/>
+</svg>

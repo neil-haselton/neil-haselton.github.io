@@ -1,0 +1,224 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Manufacturing · Neil Haselton Design Portfolio</title>
+<meta name="description" content="My journey of learning manufacturing in high school classes and on the robotics team.">
+<meta name="color-scheme" content="light dark">
+<script>
+  (function () {
+    var theme = null;
+    try { theme = localStorage.getItem('portfolio-theme'); } catch (error) { /* Storage can be unavailable in private contexts. */ }
+    if (theme !== 'light' && theme !== 'dark') {
+      theme = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+    }
+    document.documentElement.setAttribute('data-theme', theme);
+  }());
+</script>
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="icon" href="/assets/images/favicon.svg" type="image/svg+xml">
+
+  </head>
+  <body id="top">
+    <a class="skip-link" href="#main-content">Skip to content</a>
+    <header class="site-header">
+  <div class="site-header__inner section-wrap">
+    
+    <a class="brand" href="/" aria-label="Neil Haselton Design Portfolio home">
+      <span class="brand__mark" aria-hidden="true">
+        <img class="brand__mark-image brand__mark-image--light" src="/assets/images/brand-mark-light.svg" alt="">
+        <img class="brand__mark-image brand__mark-image--dark" src="/assets/images/brand-mark-dark.svg" alt="">
+      </span>
+      <span class="brand__label">Neil Haselton<br>Design Portfolio</span>
+    </a>
+    <nav class="site-nav" aria-label="Main navigation">
+      <a href="/">Home</a>
+      <a href="/#projects">Projects</a>
+      <a href="/#contact">Contact</a>
+    </nav>
+    <button class="theme-toggle" type="button" data-theme-toggle aria-label="Switch to dark theme">
+      <svg class="theme-toggle__moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.2 15.2A8.5 8.5 0 0 1 8.8 3.8 8.6 8.6 0 1 0 20.2 15.2Z"/></svg>
+      <svg class="theme-toggle__sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M4.93 4.93l1.42 1.42m11.3 11.3 1.42 1.42M2 12h2m16 0h2M4.93 19.07l1.42-1.42m11.3-11.3 1.42-1.42"/></svg>
+    </button>
+  </div>
+</header>
+
+    <main id="main-content">
+      
+<article class="project-page project-page--manufacturing">
+  <header class="project-hero section-wrap">
+    <div class="project-hero__grid">
+      <div class="project-hero__copy">
+        <div class="project-hero__heading">
+          <div>
+            <h1>Manufacturing</h1>
+            <p class="project-hero__summary">My journey of learning manufacturing in high school classes and on the robotics team.</p>
+          </div>
+        </div>
+        <div class="project-intro prose">
+</div>
+      </div>
+      <figure class="project-overview">
+        <img src="/assets/images/projects/manufacturing/overview.jpg" alt="Neil standing beside the school&#39;s Omio CNC router." width="1200" height="760" style="object-position: center 44%; transform: translate(0px, 0px) scale(1); transform-origin: center;">
+        
+      </figure>
+    </div>
+  </header>
+
+  <div class="project-sections">
+    
+      
+      
+
+<section class="content-section">
+  <div class="section-wrap text-image">
+    <div class="text-image__copy">
+      
+      <h2>Manual Machines</h2>
+      
+      <div class="prose"><p>My first experience with manufacturing was creating component drawings to communicate dimensions to the fabrication team. I wasn’t perfect at first, but after years on the team, I learned how to create drawings that clearly communicate manufacturing information. In college, I hope to learn more about manufacturing tolerances and how they affect component drawings.</p>
+</div>
+    </div>
+    <figure class="image-frame text-image__figure">
+      <div class="text-image__crop text-image__crop--contain text-image__crop--compact" style="--crop-zoom: 1; --crop-position: center center;">
+        <img src="/assets/images/projects/manufacturing/part-drawing.png" alt="Dimensioned engineering drawing of an upright box tube component." loading="lazy" width="1200" height="760">
+      </div>
+      
+    </figure>
+  </div>
+</section>
+
+        
+      
+    
+      
+      
+
+<section class="content-section content-section--dfm">
+  <div class="section-wrap text-image">
+    <div class="text-image__copy">
+      
+      <h2>Design for Manufacturing</h2>
+      
+      <div class="prose"><p>While DFM is simple in principle, applying it can be complex. Compromises are often needed so components are both effective and machinable. Discussions with the team’s fabrication subteam taught me which features are easy, difficult, or impossible to machine. My CNC experience has also given me practice designing complex parts that need multiple setups while staying practical to manufacture.</p>
+</div>
+    </div>
+    <figure class="image-frame text-image__figure">
+      <div class="text-image__crop" style="--crop-zoom: 1; --crop-position: center center;">
+        <img src="/assets/images/projects/manufacturing/dog-ring.png" alt="CAD model of a dog ring component designed for machining." loading="lazy" width="1200" height="760">
+      </div>
+      
+    </figure>
+  </div>
+</section>
+
+        
+      
+    
+      
+        
+        
+        
+        <div class="section-dwell" style="--dwell-height: 120px;">
+      
+      
+<section class="content-section content-section--cnc-machines">
+  <div class="section-wrap cnc-machines">
+    <h2 class="cnc-machines__heading">CNC Machines</h2>
+    <div class="cnc-machines__list">
+      
+        
+        <article class="cnc-machine">
+          <div class="cnc-machine__copy">
+            <h3>CNC Routers</h3>
+            <div class="prose"><p>Starting with little guidance, I learned to program operations in SOLIDWORKS CAM and find router settings that kept tools from breaking. I used those skills to make a significant portion of the team’s 2024 robot. After that router broke in 2025, the school got a newer machine in 2026, and I moved to Fusion 360. I built templates for our common operations, so even complex parts like this hood gear take only minutes to program.</p>
+</div>
+          </div>
+          <div class="cnc-machine__visual" role="group" aria-label="CNC Routers">
+            
+              <div class="cnc-machine__image-frame" style="--crop-zoom: 1.3; --crop-position: 40% 39%;">
+                <img class="cnc-machine__image" src="/assets/images/projects/manufacturing/hood-gear.jpg" alt="CNC-routed aluminum hood gear plate for a robotics mechanism." loading="lazy" width="607" height="786">
+              </div>
+            
+          </div>
+        </article>
+      
+        
+        <article class="cnc-machine cnc-machine--image-right cnc-machine--pair">
+          <div class="cnc-machine__copy">
+            <h3>CNC Mills</h3>
+            <div class="prose"><p>Robot parts rarely needed the school’s Tormach mill, but I wanted to learn it. After the routers, the mill was easy to pick up. Working four hours a week, I made this sprocket in a few weeks.</p>
+</div>
+          </div>
+          <div class="cnc-machine__visual cnc-machine__visual--pair" role="group" aria-label="Sprocket CAD model and machined part">
+            
+              
+              
+              <figure class="cnc-machine__sprocket">
+                <div class="cnc-machine__circle cnc-machine__circle--cad"><img src="/assets/images/projects/manufacturing/sprocket-cad.png" alt="CAD model of a sprocket with a raised keyed hub." loading="lazy" width="600" height="600"></div>
+                <figcaption>CAD</figcaption>
+              </figure>
+              <svg class="cnc-machine__arrow" viewBox="0 0 120 56" role="img" aria-label="Arrow from CAD design to machined sprocket" focusable="false">
+                <path d="M7 28h95M80 7l22 21-22 21" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="5"></path>
+              </svg>
+              <figure class="cnc-machine__sprocket">
+                <div class="cnc-machine__circle" style="--crop-zoom: 1.15; --crop-position: 49% 0%; --crop-offset-y: -7%;"><img src="/assets/images/projects/manufacturing/sprocket-real.jpg" alt="Finished aluminum sprocket machined on the Tormach CNC mill." loading="lazy" width="600" height="600"></div>
+                <figcaption>Machined</figcaption>
+              </figure>
+            
+          </div>
+        </article>
+      
+        
+        <article class="cnc-machine">
+          <div class="cnc-machine__copy">
+            <h3>Documentation</h3>
+            <div class="prose"><p>To keep contributing after graduation, I documented the CNC router workflow as a fallback if new students miss training and the team’s machining knowledge is at risk. I’ve shared it with other teams, too. It covers Fusion 360 setup, workholding, CAM, and machine operation.</p>
+</div>
+          </div>
+          <div class="cnc-machine__visual" role="group" aria-label="Documentation">
+            
+              <div class="cnc-machine__image-frame cnc-machine__image-frame--contain" style="--crop-zoom: 1.1; --crop-position: center center;">
+                <img class="cnc-machine__image" src="/assets/images/projects/manufacturing/manual.png" alt="Screenshot of the CNC router manual&#39;s Fusion setup instructions." loading="lazy" width="607" height="786">
+              </div>
+            
+          </div>
+        </article>
+      
+    </div>
+  </div>
+</section>
+
+        
+      <div class="section-dwell__pause" aria-hidden="true"></div></div>
+    
+  </div>
+
+</article>
+
+    </main>
+    <footer class="site-footer">
+  <div class="section-wrap site-footer__inner">
+    
+    <a class="brand brand--footer" href="/">
+      <span class="brand__mark" aria-hidden="true">
+        <img class="brand__mark-image brand__mark-image--light" src="/assets/images/brand-mark-light.svg" alt="">
+        <img class="brand__mark-image brand__mark-image--dark" src="/assets/images/brand-mark-dark.svg" alt="">
+      </span>
+      <span class="brand__label">Neil Haselton<br>Design Portfolio</span>
+    </a>
+    <div class="site-footer__contact" id="contact">
+      <span class="site-footer__contact-label">Contact:</span>
+      <div class="site-footer__contact-links">
+        <a class="text-link" href="mailto:nrhaselton@crimson.ua.edu" draggable="false">nrhaselton@crimson.ua.edu</a>
+        <a class="text-link" href="https://www.linkedin.com/in/neil-haselton-a4a009427/" draggable="false">LinkedIn</a>
+      </div>
+    </div>
+    <a class="back-to-top" href="#top">Back to top</a>
+  </div>
+</footer>
+
+    <script src="/assets/js/site.js" defer></script>
+  </body>
+</html>

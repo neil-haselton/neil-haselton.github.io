@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 800" role="img" aria-labelledby="title desc">
+  <title id="title">Portrait placeholder</title>
+  <desc id="desc">An abstract illustrated silhouette, clearly marked as a placeholder for a personal photo.</desc>
+  <rect width="640" height="800" fill="#e3ecf5"/>
+  <path d="M0 580 640 420v380H0z" fill="#c7d9eb"/>
+  <circle cx="320" cy="284" r="118" fill="#6e91b8"/>
+  <path d="M100 800c14-174 102-282 220-282s206 108 220 282" fill="#3178C6"/>
+  <path d="M256 402h128v66c-18 24-40 36-64 36s-46-12-64-36z" fill="#587da7"/>
+  <rect x="38" y="36" width="564" height="728" fill="none" stroke="#3178C6" stroke-opacity=".35" stroke-width="2"/>
+  <g fill="#213a54" font-family="Arial,sans-serif" text-anchor="middle">
+    <text x="320" y="665" font-size="21" letter-spacing="5">PORTRAIT</text>
+    <text x="320" y="700" font-size="21" letter-spacing="5">PLACEHOLDER</text>
+  </g>
+</svg>

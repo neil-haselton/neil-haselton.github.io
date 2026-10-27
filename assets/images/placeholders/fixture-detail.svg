@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 760" role="img" aria-labelledby="title desc">
+  <title id="title">Placeholder fixture clamp detail</title><desc id="desc">Illustrative clamp and locator detail, not manufacturing data.</desc>
+  <rect width="1200" height="760" fill="#e8edf2"/><path d="M0 500h1200v260H0z" fill="#d7e0e9"/>
+  <g stroke="#315f91" stroke-width="5" stroke-linejoin="round" fill="#b8cbe0">
+    <path d="M200 510h800v105H200z"/><path d="M280 510v-80h120v80M800 510v-80h120v80" fill="#dce9f5"/>
+    <path d="m450 510 80-180h95l78 180z" fill="#3178C6"/><path d="M530 330v-82h94v82" fill="#f1f4f7"/>
+    <path d="M575 248v-90h8v90M400 390h50m252 0h60" fill="none"/>
+    <circle cx="312" cy="565" r="16" fill="#f1f4f7"/><circle cx="887" cy="565" r="16" fill="#f1f4f7"/>
+  </g><g fill="#35485e" font-family="Arial,sans-serif"><text x="60" y="75" font-size="20" letter-spacing="4">SAMPLE ARTWORK · DETAIL VIEW</text><text x="696" y="247" font-size="20">CLAMP CONTACT</text><text x="62" y="706" font-size="16" letter-spacing="3">ILLUSTRATIVE GEOMETRY ONLY · NOT FOR MANUFACTURE</text></g>
+</svg>

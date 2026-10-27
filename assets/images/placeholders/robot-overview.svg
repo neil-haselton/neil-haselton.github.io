@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 760" role="img" aria-labelledby="title desc">
+  <title id="title">Sample transparent robotics assembly</title><desc id="desc">Unlabeled sample robot illustration on a transparent canvas.</desc>
+  <g stroke="#2b5f98" stroke-width="7" stroke-linejoin="round" stroke-linecap="round">
+    <path d="m350 360 382-83 156 67-390 101z" fill="#b8cbe0"/><path d="m350 360v137l148 84V445M888 344v140l-390 97" fill="#99b4d2"/>
+    <path d="m350 497 382-91 156 78-390 97z" fill="#c7d6e6"/><path d="m498 445 390-101" fill="none"/>
+    <path d="M424 365v-86l68-16v90M781 287v-76l68-18v82" fill="#9bbbe0"/><path d="m492 279 297-69 110 50-307 76z" fill="#c5d8ed"/>
+    <path d="m680 285 101-131 68 15-110 148" fill="#3178C6"/><circle cx="726" cy="267" r="34" fill="#edf4fb"/>
+    <path d="m779 169 44-62 51 18-26 65" fill="#5f94cc"/><path d="m863 128 115 22-8 32-113-19" fill="#cad9e8"/>
+    <path d="m300 400-26 10v118l26 14M934 366l27-6v123l-27 10" fill="#486c94"/>
+    <ellipse cx="365" cy="535" rx="44" ry="73" fill="#596676"/><ellipse cx="850" cy="535" rx="44" ry="73" fill="#596676"/>
+    <ellipse cx="365" cy="535" rx="14" ry="34" fill="#d4dfe9"/><ellipse cx="850" cy="535" rx="14" ry="34" fill="#d4dfe9"/>
+  </g>
+</svg>

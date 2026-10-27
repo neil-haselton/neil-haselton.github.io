@@ -1,0 +1,4 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 760" role="img" aria-labelledby="title desc">
+  <title id="title">Block CAD placeholder view</title><desc id="desc">Simple block geometry representing an early CAD stage; demonstration only.</desc>
+  <g stroke="#596676" stroke-width="7" stroke-linejoin="round"><path d="m350 360 382-83 156 67-390 101z" fill="#99b4d2"/><path d="m350 360v137l148 84V445M888 344v140l-390 97v-136" fill="#c7d6e6"/><path d="m424 365v-86l68-16v90M781 287v-76l68-18v82" fill="#b3cae2"/><path d="m492 279 297-69 110 50-307 76z" fill="#cbd9e8"/><path d="m680 285 101-131 68 15-110 148z" fill="#9ebbe0"/><path d="m779 169 44-62 51 18-26 65M863 128l115 22-8 32-113-19" fill="#b7cbe0"/><ellipse cx="365" cy="535" rx="44" ry="73" fill="#66717d"/><ellipse cx="850" cy="535" rx="44" ry="73" fill="#66717d"/></g>
+</svg>

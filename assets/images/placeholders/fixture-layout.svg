@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 760" role="img" aria-labelledby="title desc">
+  <title id="title">Placeholder fixture layout drawing</title><desc id="desc">Sample top-view diagram with locating features. Replace with a real project image.</desc>
+  <rect width="1200" height="760" fill="#e8edf2"/><g stroke="#3f6f9f" stroke-width="3" fill="none">
+    <path d="M185 130h830v500H185z" fill="#dce5ed"/><path d="M285 215h630v330H285z" fill="#f4f6f8" stroke-width="5"/>
+    <path d="M390 275h420v210H390z" fill="#b8cbe0" stroke-width="5"/><path d="M390 380h420M600 275v210" stroke-dasharray="9 9"/>
+    <circle cx="337" cy="265" r="23" fill="#3178C6"/><circle cx="858" cy="265" r="23" fill="#3178C6"/><circle cx="337" cy="497" r="23" fill="#3178C6"/><circle cx="858" cy="497" r="23" fill="#3178C6"/>
+    <path d="M210 102v-30m-15 15h30M990 660v30m-15-15h30"/>
+    <path d="M390 228v-58m420 58v-58m-420 15h420" stroke-width="2"/>
+  </g><g fill="#35485e" font-family="Arial,sans-serif"><text x="56" y="70" font-size="20" letter-spacing="4">SAMPLE ARTWORK · TOP VIEW</text><text x="548" y="151" font-size="19">DATUM A</text><text x="63" y="710" font-size="16" letter-spacing="3">LOCATING FEATURES AND BASE PLATE / PLACEHOLDER</text></g>
+</svg>

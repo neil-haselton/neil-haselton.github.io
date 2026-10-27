@@ -1,0 +1,322 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>FRC 2025 Robot · Neil Haselton Design Portfolio</title>
+<meta name="description" content="FIRST Robotics Team 2137&#39;s robot for the 2025 season, Guillotine">
+<meta name="color-scheme" content="light dark">
+<script>
+  (function () {
+    var theme = null;
+    try { theme = localStorage.getItem('portfolio-theme'); } catch (error) { /* Storage can be unavailable in private contexts. */ }
+    if (theme !== 'light' && theme !== 'dark') {
+      theme = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+    }
+    document.documentElement.setAttribute('data-theme', theme);
+  }());
+</script>
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="icon" href="/assets/images/favicon.svg" type="image/svg+xml">
+
+  </head>
+  <body id="top">
+    <a class="skip-link" href="#main-content">Skip to content</a>
+    <header class="site-header">
+  <div class="site-header__inner section-wrap">
+    
+    <a class="brand" href="/" aria-label="Neil Haselton Design Portfolio home">
+      <span class="brand__mark" aria-hidden="true">
+        <img class="brand__mark-image brand__mark-image--light" src="/assets/images/brand-mark-light.svg" alt="">
+        <img class="brand__mark-image brand__mark-image--dark" src="/assets/images/brand-mark-dark.svg" alt="">
+      </span>
+      <span class="brand__label">Neil Haselton<br>Design Portfolio</span>
+    </a>
+    <nav class="site-nav" aria-label="Main navigation">
+      <a href="/">Home</a>
+      <a href="/#projects">Projects</a>
+      <a href="/#contact">Contact</a>
+    </nav>
+    <button class="theme-toggle" type="button" data-theme-toggle aria-label="Switch to dark theme">
+      <svg class="theme-toggle__moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.2 15.2A8.5 8.5 0 0 1 8.8 3.8 8.6 8.6 0 1 0 20.2 15.2Z"/></svg>
+      <svg class="theme-toggle__sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M4.93 4.93l1.42 1.42m11.3 11.3 1.42 1.42M2 12h2m16 0h2M4.93 19.07l1.42-1.42m11.3-11.3 1.42-1.42"/></svg>
+    </button>
+  </div>
+</header>
+
+    <main id="main-content">
+      
+<article class="project-page">
+  <header class="project-hero section-wrap">
+    <div class="project-hero__grid">
+      <div class="project-hero__copy">
+        <div class="project-hero__heading">
+          <div>
+            <h1>FRC 2025 Robot</h1>
+            <p class="project-hero__summary">FIRST Robotics Team 2137&#39;s robot for the 2025 season, Guillotine</p>
+          </div>
+        </div>
+        <div class="project-intro prose">
+</div>
+      </div>
+      <figure class="project-overview">
+        <img src="/assets/images/projects/frc-2025-robot/originals/25-COMP%20-%20Main%20Image.png" alt="Team 2137 robot competing on the 2025 FIRST Robotics Competition field." width="1200" height="760" style="object-position: 170% 200%; transform: translate(-4.87%, -39.16%) scale(2); transform-origin: top left;">
+        
+      </figure>
+    </div>
+  </header>
+
+  <div class="project-sections">
+    
+      
+      
+<section class="content-section">
+  <div class="section-wrap content-section--narrow">
+    
+    <h2>Robot Overview</h2>
+    <div class="prose"><p>The 2025 FIRST Robotics Competition game challenged teams to score 11.875” long, 4.5” OD PVC pipes called “coral” onto large structures of steel pipe called reefs. Scoring higher on the reef was worth more points. Additionally, 16.25” inflatable kickballs called “algae” were taken off the reef and scored in nets 6 feet from the ground. At the end of the game, robots climbed onto a cage: a metal frame hanging by a chain under the net.</p>
+
+<p>Our robot was able to complete every task in this game with an extremely simple robot. This simplicity allowed the team to focus on software and driver performance, and we won our first district event since 2019. At the FIRST Championship, we ended third in our division. Statistical rankings commonly had our robot in the top 15 of 526 teams in Michigan. Additionally, the final iteration of our robot, which competed in two offseason events, had a win-loss record of 30-1.</p>
+</div>
+  </div>
+</section>
+
+        
+      
+    
+      
+        
+        
+        
+        <div class="section-dwell section-dwell--alt" style="--dwell-height: 120px;">
+      
+      
+
+
+
+<section class="content-section content-section--subsystem">
+ <div class="section-wrap subsystem-section__inner">
+  <div class="section-heading section-heading--compact">
+    <div><h2>Subsystem Highlights</h2></div>
+    
+  </div>
+  
+    
+    <div class="subsystem-explorer subsystem-explorer--arcs" data-subsystem-explorer>
+      <div class="subsystem-explorer__list subsystem-explorer__list--left" data-subsystem-list aria-label="Subsystems, first group">
+        
+          
+
+<button class="subsystem-choice" type="button" data-subsystem-choice="0" aria-pressed="false">
+  <span class="subsystem-choice__copy"><span class="subsystem-choice__name">Elevator</span><span class="subsystem-choice__description">Since the scoring locations were located high in the air, we decided to use an elevator made of aluminum box tube extrusion. This was driven with a custom gearbox with a continuous dyneema rigging to pull the elevator up and down.</span></span>
+</button>
+
+          <span class="subsystem-explorer__divider" aria-hidden="true"></span>
+        
+          
+
+<button class="subsystem-choice" type="button" data-subsystem-choice="1" aria-pressed="false">
+  <span class="subsystem-choice__copy"><span class="subsystem-choice__name">Climber</span><span class="subsystem-choice__description">Our climber worked by spinning two wheels to pull the vertical bars of the cage into our robot. After that, a latching mechanism locked the cage in place, and a winch mechanism pulled the climber back, lifting up the robot.</span></span>
+</button>
+
+          
+        
+      </div>
+      <div class="subsystem-explorer__visual">
+        <div class="cad-stage" role="img" aria-label="Team 2137&#39;s 2025 robot CAD assembly" data-cad-stage style="--cad-stage-aspect: 1040 / 1080; --cad-stage-width-ratio: 0.963; --cad-stage-height: 74svh;">
+          <img class="cad-stage__layer cad-stage__normal is-active" src="/assets/images/projects/frc-2025-robot/cropped/25-COMP%20-%20Full%20Detail.png" alt="" width="1200" height="760" data-default-layer>
+          <img class="cad-stage__layer cad-stage__ghost" src="/assets/images/projects/frc-2025-robot/cropped/25-COMP%20-%20Full%20Detail%20Transparent.png" alt="" width="1200" height="760" data-ghost-layer style="--ghost-opacity: 0.48;">
+          
+            <img class="cad-stage__layer cad-stage__highlight" src="/assets/images/projects/frc-2025-robot/cropped/25-COMP%20-%20Elevator.png" alt="" width="1200" height="760" data-highlight-layer="0">
+          
+            <img class="cad-stage__layer cad-stage__highlight" src="/assets/images/projects/frc-2025-robot/cropped/25-COMP%20-%20Climber.png" alt="" width="1200" height="760" data-highlight-layer="1">
+          
+            <img class="cad-stage__layer cad-stage__highlight" src="/assets/images/projects/frc-2025-robot/cropped/25-COMP%20-%20End%20Effector.png" alt="" width="1200" height="760" data-highlight-layer="2">
+          
+            <img class="cad-stage__layer cad-stage__highlight" src="/assets/images/projects/frc-2025-robot/cropped/25-COMP%20-%20Algae%20Claw.png" alt="" width="1200" height="760" data-highlight-layer="3">
+          
+          <div class="cad-stage__placeholder" data-stage-fallback hidden>CAD image unavailable.<br>Check the image path for this view.</div>
+        </div>
+      </div>
+      <div class="subsystem-explorer__list subsystem-explorer__list--right" data-subsystem-list aria-label="Subsystems, second group">
+        
+          
+          
+
+<button class="subsystem-choice" type="button" data-subsystem-choice="2" aria-pressed="false">
+  <span class="subsystem-choice__copy"><span class="subsystem-choice__name">End Effector and Funnel</span><span class="subsystem-choice__description">To simplify the robot, we decided to only pick up coral from the human-loading station. To maintain speed, we created a wide funnel that lowered the precision required for dropping coral. Using sensors, coral automatically stopped inside the end effector, and was ejected once the robot and elevator reached the scoring location.</span></span>
+</button>
+
+          <span class="subsystem-explorer__divider" aria-hidden="true"></span>
+        
+          
+          
+
+<button class="subsystem-choice" type="button" data-subsystem-choice="3" aria-pressed="false">
+  <span class="subsystem-choice__copy"><span class="subsystem-choice__name">Algae Claw</span><span class="subsystem-choice__description">Added later in the season, our algae claw was designed with simplicity in mind. To power its wheels, there are belts and gears from the end effector wheels to the algae claw wheels. This kept our center of mass low, as we didn&#39;t need an extra motor up high.</span></span>
+</button>
+
+          
+        
+      </div>
+    </div>
+  
+ </div>
+</section>
+
+        
+      <div class="section-dwell__pause" aria-hidden="true"></div></div>
+    
+      
+        
+        
+        
+        <div class="section-dwell" style="--dwell-height: 120px;">
+      
+      
+
+
+
+<section class="content-section content-section--algae-planning" data-algae-switcher aria-labelledby="algae-planning-heading">
+  <div class="section-wrap algae-planning__layout">
+    <div class="algae-planning__copy">
+      
+      <h2 id="algae-planning-heading">Planning Ahead</h2>
+      <div class="prose"><p>When discussing strategy at the start of the season, we weren’t sure if algae would be an important part of the game or not. It required much more complexity than scoring coral, and was worth fewer points. However, I anticipated the possibility that we were wrong, and designed our algae removal mechanism in a way that would make it easy to switch to an algae claw if that were needed. The algae removal mechanism was significantly over-built, but in the end it was worth it, as algae became one of the most important parts of the game. After reefs were full, algae became a limited resource worth more points than coral. This early season decision let us expand our capabilities and stay competitive late into the season.</p>
+</div>
+    </div>
+    <div class="algae-planning__visual">
+      <div class="algae-planning__controls" role="group" aria-label="Choose algae mechanism">
+        <button class="algae-planning__button is-active" type="button" data-algae-select="stick" aria-pressed="true" aria-controls="algae-mechanism-view">Stick</button>
+        <button class="algae-planning__button" type="button" data-algae-select="claw" aria-pressed="false" aria-controls="algae-mechanism-view">Claw</button>
+      </div>
+      <figure class="algae-planning__stage" id="algae-mechanism-view" role="img" aria-label="Robot with the algae stick mechanism highlighted">
+        <img class="algae-planning__robot-layer" src="/assets/images/projects/frc-2025-robot/originals/25-COMP%20-%20Algae%20Transparent.png" alt="" aria-hidden="true" loading="lazy" width="3296" height="2547">
+        <img class="algae-planning__mechanism is-active" src="/assets/images/projects/frc-2025-robot/originals/25-COMP%20-%20Algae%20Stick%20Focus.png" alt="" data-algae-view="stick" aria-hidden="false" loading="lazy" width="3296" height="2547">
+        <img class="algae-planning__mechanism" src="/assets/images/projects/frc-2025-robot/originals/25-COMP%20-%20Algae%20Claw%20Focus.png" alt="" data-algae-view="claw" aria-hidden="true" loading="lazy" width="3296" height="2547">
+      </figure>
+    </div>
+  </div>
+</section>
+
+        
+      <div class="section-dwell__pause" aria-hidden="true"></div></div>
+    
+      
+        
+        
+        
+        <div class="section-dwell section-dwell--alt" style="--dwell-height: 120px;">
+      
+      
+<section class="content-section content-section--iteration-timeline">
+  <div class="section-wrap iteration-timeline" data-iteration-timeline>
+    <h2 class="iteration-timeline__heading">Climber Iterations</h2>
+    <p class="iteration-timeline__intro">Packaging a climb mechanism into the robot was a difficult challenge. Here are our primary iterations.</p>
+    
+    <div class="iteration-timeline__main">
+      <div class="iteration-timeline__stage" aria-live="off" style="--iteration-image-aspect: 2296 / 2137;">
+        
+          
+          <img class="iteration-timeline__image is-active" src="/assets/images/projects/frc-2025-robot/cropped/25-COMP%20-%20Climber%20V1.png" alt="CAD model of the first climber iteration." data-iteration-image="0" width="1200" height="928" draggable="false">
+        
+          
+          <img class="iteration-timeline__image" src="/assets/images/projects/frc-2025-robot/cropped/25-COMP%20-%20Climber%20V2.png" alt="CAD model of the second climber iteration." data-iteration-image="1" aria-hidden="true" width="1200" height="928" draggable="false">
+        
+          
+          <img class="iteration-timeline__image" src="/assets/images/projects/frc-2025-robot/cropped/25-COMP%20-%20Climber%20V3.png" alt="CAD model of the third climber iteration." data-iteration-image="2" aria-hidden="true" width="1200" height="928" draggable="false">
+        
+          
+          <img class="iteration-timeline__image" src="/assets/images/projects/frc-2025-robot/cropped/25-COMP%20-%20Climber%20V4.png" alt="CAD model of the fourth climber iteration." data-iteration-image="3" aria-hidden="true" width="1200" height="928" draggable="false">
+        
+          
+          <img class="iteration-timeline__image" src="/assets/images/projects/frc-2025-robot/cropped/25-COMP%20-%20Climber%20V5.png" alt="CAD model of the fifth climber iteration." data-iteration-image="4" aria-hidden="true" width="1200" height="928" draggable="false">
+        
+      </div>
+      <div class="iteration-timeline__captions" aria-live="polite" aria-atomic="true">
+        
+          <div class="iteration-timeline__caption is-active" data-iteration-caption="0">
+            <p>Our first iteration was made by my classmate. It was too big, had tolerance issues with gears, and hit the elevator before the robot left the ground.</p>
+          </div>
+        
+          <div class="iteration-timeline__caption" data-iteration-caption="1" aria-hidden="true">
+            <p>The second iteration involved a full redesign. It was much simpler, using a spool to pull back the climbing arm rather than gears and chains. However, the robot slipped on the cage, preventing us from lifting off the ground.</p>
+          </div>
+        
+          <div class="iteration-timeline__caption" data-iteration-caption="2" aria-hidden="true">
+            <p>The third iteration was the first one that worked. It passively grabbed onto the back of the cage, but required precise alignment and often slipped or went into the cage diagonally. This iteration competed at our first event.</p>
+          </div>
+        
+          <div class="iteration-timeline__caption" data-iteration-caption="3" aria-hidden="true">
+            <p>The fourth iteration was similar to the third, but grabbed the inside of the cage. While slipping was still an issue, it was impossible to get it stuck in the cage. This iteration was on our robot for the rest of the season due to time constraints and other priorities.</p>
+          </div>
+        
+          <div class="iteration-timeline__caption" data-iteration-caption="4" aria-hidden="true">
+            <p>After having an inconsistent climb all season, we decided to redesign it for our offseason events. The final iteration of our climber has a funnel and two active polyurethane wheels to align the cage and pull it in. After that, two small latches would latch onto the vertical poles of the cage, and we&#39;d pull the climber down to climb. This iteration also featured a ratchet to prevent the climb from falling after the match. After a few small issues at our first offseason event that we fixed, this climb worked every time, as long as we gave ourselves enough time to climb.</p>
+          </div>
+        
+      </div>
+    </div>
+    <div class="iteration-timeline__control">
+      <div class="iteration-timeline__version" data-iteration-version aria-live="polite">Version 1/5</div>
+      <input id="iteration-range-climber-iterations" class="iteration-timeline__range" data-iteration-range type="range" min="0" max="4" step="1" value="0" aria-label="Choose climber iteration" aria-valuetext="Version 1/5">
+      <ol class="iteration-timeline__labels" aria-hidden="true">
+        
+        
+          
+          
+          <li class="is-active" data-iteration-label="0" style="--iteration-stop: 0.0%;">V1</li>
+        
+          
+          
+          <li data-iteration-label="1" style="--iteration-stop: 25.0%;">V2</li>
+        
+          
+          
+          <li data-iteration-label="2" style="--iteration-stop: 50.0%;">V3</li>
+        
+          
+          
+          <li data-iteration-label="3" style="--iteration-stop: 75.0%;">V4</li>
+        
+          
+          
+          <li data-iteration-label="4" style="--iteration-stop: 100.0%;">V5</li>
+        
+      </ol>
+    </div>
+  </div>
+</section>
+
+      
+      <div class="section-dwell__pause" aria-hidden="true"></div></div>
+    
+  </div>
+
+</article>
+
+    </main>
+    <footer class="site-footer">
+  <div class="section-wrap site-footer__inner">
+    
+    <a class="brand brand--footer" href="/">
+      <span class="brand__mark" aria-hidden="true">
+        <img class="brand__mark-image brand__mark-image--light" src="/assets/images/brand-mark-light.svg" alt="">
+        <img class="brand__mark-image brand__mark-image--dark" src="/assets/images/brand-mark-dark.svg" alt="">
+      </span>
+      <span class="brand__label">Neil Haselton<br>Design Portfolio</span>
+    </a>
+    <div class="site-footer__contact" id="contact">
+      <span class="site-footer__contact-label">Contact:</span>
+      <div class="site-footer__contact-links">
+        <a class="text-link" href="mailto:nrhaselton@crimson.ua.edu" draggable="false">nrhaselton@crimson.ua.edu</a>
+        <a class="text-link" href="https://www.linkedin.com/in/neil-haselton-a4a009427/" draggable="false">LinkedIn</a>
+      </div>
+    </div>
+    <a class="back-to-top" href="#top">Back to top</a>
+  </div>
+</footer>
+
+    <script src="/assets/js/site.js" defer></script>
+  </body>
+</html>

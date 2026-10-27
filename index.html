@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Neil Haselton Design Portfolio</title>
+<meta name="description" content="Neil Haselton, a first year mechanical engineering student at The University of Alabama, interested in robotics, controls, and complex mechanical systems.">
+<meta name="color-scheme" content="light dark">
+<script>
+  (function () {
+    var theme = null;
+    try { theme = localStorage.getItem('portfolio-theme'); } catch (error) { /* Storage can be unavailable in private contexts. */ }
+    if (theme !== 'light' && theme !== 'dark') {
+      theme = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+    }
+    document.documentElement.setAttribute('data-theme', theme);
+  }());
+</script>
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="icon" href="/assets/images/favicon.svg" type="image/svg+xml">
+
+  </head>
+  <body id="top">
+    <a class="skip-link" href="#main-content">Skip to content</a>
+    <header class="site-header">
+  <div class="site-header__inner section-wrap">
+    
+    <a class="brand" href="#top" aria-label="Neil Haselton Design Portfolio home">
+      <span class="brand__mark" aria-hidden="true">
+        <img class="brand__mark-image brand__mark-image--light" src="/assets/images/brand-mark-light.svg" alt="">
+        <img class="brand__mark-image brand__mark-image--dark" src="/assets/images/brand-mark-dark.svg" alt="">
+      </span>
+      <span class="brand__label">Neil Haselton<br>Design Portfolio</span>
+    </a>
+    <nav class="site-nav" aria-label="Main navigation">
+      <a href="#top">Home</a>
+      <a href="/#projects">Projects</a>
+      <a href="/#contact">Contact</a>
+    </nav>
+    <button class="theme-toggle" type="button" data-theme-toggle aria-label="Switch to dark theme">
+      <svg class="theme-toggle__moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.2 15.2A8.5 8.5 0 0 1 8.8 3.8 8.6 8.6 0 1 0 20.2 15.2Z"/></svg>
+      <svg class="theme-toggle__sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M4.93 4.93l1.42 1.42m11.3 11.3 1.42 1.42M2 12h2m16 0h2M4.93 19.07l1.42-1.42m11.3-11.3 1.42-1.42"/></svg>
+    </button>
+  </div>
+</header>
+
+    <main id="main-content">
+      <section class="home-intro" aria-labelledby="intro-title">
+  <div class="hero section-wrap">
+    <div class="hero__copy">
+      <p class="eyebrow">Mechanical engineering · robotics · controls</p>
+      <h1 id="intro-title">Neil Haselton</h1>
+      <p class="hero__lead">I am a first year mechanical engineering student at The University of Alabama. I love robotics, controls, and complex mechanical systems. Here are some of my projects.</p>
+      <a class="button-link" href="#projects">Explore selected projects</a>
+    </div>
+    <figure class="hero__portrait">
+      <img src="/assets/images/portrait-neil-haselton.png" alt="Neil Haselton portrait" width="1023" height="1536">
+    </figure>
+  </div>
+</section>
+<section class="projects-section" id="projects" aria-labelledby="projects-title">
+  <div class="section-wrap">
+  <div class="section-heading">
+    <div>
+      <h2 id="projects-title">Projects</h2>
+    </div>
+  </div>
+
+  <div class="project-grid">
+    
+    
+      
+      
+      
+      <article class="project-card">
+        <a class="project-card__link" href="/projects/frc-2025-robot/" aria-label="View FRC 2025 Robot project">
+          <div class="project-card__image-wrap">
+            <img class="project-card__image project-card__image--robot" src="/assets/images/projects/frc-2025-robot/originals/25-COMP%20-%20Main%20Image.png" alt="Team 2137 robot competing on the 2025 FIRST Robotics Competition field." loading="lazy" width="1200" height="760" style="object-position: 170% 200%; transform: translate(-45.87%, -22.13%) scale(2.1); transform-origin: top left;">
+          </div>
+          <div class="project-card__body">
+            <div class="project-card__meta"><span>FIRST Robotics Competition</span><span>2025</span></div>
+            <h3>FRC 2025 Robot</h3>
+            <p>FIRST Robotics Team 2137&#39;s robot for the 2025 season, Guillotine</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      
+      
+      <article class="project-card">
+        <a class="project-card__link" href="/projects/frc-2026-robot/" aria-label="View FRC 2026 Robot project">
+          <div class="project-card__image-wrap">
+            <img class="project-card__image project-card__image--robot" src="/assets/images/projects/frc-2026-robot/main-image.jpg" alt="Team 2137&#39;s 2026 robot, Guillotine, at a FIRST Robotics Competition event." loading="lazy" width="1200" height="760">
+          </div>
+          <div class="project-card__body">
+            <div class="project-card__meta"><span>FIRST Robotics Competition</span><span>2026</span></div>
+            <h3>FRC 2026 Robot</h3>
+            <p>FIRST Robotics Team 2137&#39;s robot for the 2026 season, Downpour.</p>
+          </div>
+        </a>
+      </article>
+    
+      
+      
+      
+      <article class="project-card">
+        <a class="project-card__link" href="/projects/manufacturing/" aria-label="View Manufacturing project">
+          <div class="project-card__image-wrap">
+            <img class="project-card__image" src="/assets/images/projects/manufacturing/overview.jpg" alt="Neil standing beside the school&#39;s Omio CNC router." loading="lazy" width="1200" height="760" style="object-position: center 44%; transform: translate(0px, 0px) scale(1); transform-origin: center;">
+          </div>
+          <div class="project-card__body">
+            <div class="project-card__meta"><span>Manufacturing</span><span>2022–2026</span></div>
+            <h3>Manufacturing</h3>
+            <p>My journey of learning manufacturing in high school classes and on the robotics team.</p>
+          </div>
+        </a>
+      </article>
+    
+  </div>
+  </div>
+</section>
+
+
+    </main>
+    <footer class="site-footer">
+  <div class="section-wrap site-footer__inner">
+    
+    <a class="brand brand--footer" href="#top">
+      <span class="brand__mark" aria-hidden="true">
+        <img class="brand__mark-image brand__mark-image--light" src="/assets/images/brand-mark-light.svg" alt="">
+        <img class="brand__mark-image brand__mark-image--dark" src="/assets/images/brand-mark-dark.svg" alt="">
+      </span>
+      <span class="brand__label">Neil Haselton<br>Design Portfolio</span>
+    </a>
+    <div class="site-footer__contact" id="contact">
+      <span class="site-footer__contact-label">Contact:</span>
+      <div class="site-footer__contact-links">
+        <a class="text-link" href="mailto:nrhaselton@crimson.ua.edu" draggable="false">nrhaselton@crimson.ua.edu</a>
+        <a class="text-link" href="https://www.linkedin.com/in/neil-haselton-a4a009427/" draggable="false">LinkedIn</a>
+      </div>
+    </div>
+    <a class="back-to-top" href="#top">Back to top</a>
+  </div>
+</footer>
+
+    <script src="/assets/js/site.js" defer></script>
+  </body>
+</html>
