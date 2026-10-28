@@ -275,46 +275,83 @@
 
   var dwellSections = Array.prototype.slice.call(document.querySelectorAll('.section-dwell'));
   if (dwellSections.length) {
-    var dwellEaseDistance = 36;
-    var dwellFrame = null;
+    var touchPrimary = window.matchMedia('(hover: none) and (pointer: coarse)');
+    var scrollTickDistance = 90;
+    var scrollSettleDelay = 450;
+    var settleTimer = null;
+    var userScrollIntent = false;
+    var dwellStates = dwellSections.map(function () { return { armed: true }; });
+    var siteHeader = document.querySelector('.site-header');
 
-    function updateDwellEase() {
-      var header = document.querySelector('.site-header');
-      var stickyTop = header ? header.getBoundingClientRect().height : 0;
-      var scrollPosition = window.scrollY;
+    function getDwellProximity(wrapper) {
+      return parseFloat(wrapper.style.getPropertyValue('--dwell-snap-distance')) || scrollTickDistance;
+    }
 
-      dwellSections.forEach(function (wrapper) {
-        var section = wrapper.querySelector(':scope > .content-section');
-        var pause = wrapper.querySelector(':scope > .section-dwell__pause');
-        if (!section || !pause) return;
+    function getDwellTarget(wrapper) {
+      var headerHeight = siteHeader ? siteHeader.getBoundingClientRect().height : 0;
+      return wrapper.getBoundingClientRect().top + window.scrollY - headerHeight;
+    }
 
-        var start = wrapper.getBoundingClientRect().top + scrollPosition - stickyTop;
-        var end = start + pause.getBoundingClientRect().height;
-        var translate = 0;
+    function updateDwellAvailability() {
+      if (touchPrimary.matches && settleTimer !== null) {
+        window.clearTimeout(settleTimer);
+        settleTimer = null;
+      }
+    }
 
-        if (scrollPosition >= start - dwellEaseDistance && scrollPosition < start) {
-          var approach = (scrollPosition - (start - dwellEaseDistance)) / dwellEaseDistance;
-          var easedApproach = approach * approach * (3 - 2 * approach);
-          translate = dwellEaseDistance * (approach - easedApproach);
-        } else if (scrollPosition >= end && scrollPosition < end + dwellEaseDistance) {
-          var departure = (scrollPosition - end) / dwellEaseDistance;
-          var easedDeparture = departure * departure * (3 - 2 * departure);
-          translate = dwellEaseDistance * (departure - easedDeparture);
+    function scheduleDwellNudge() {
+      if (!userScrollIntent || touchPrimary.matches) return;
+      if (settleTimer !== null) window.clearTimeout(settleTimer);
+      settleTimer = window.setTimeout(function () {
+        settleTimer = null;
+        userScrollIntent = false;
+
+        var scrollPosition = window.scrollY;
+        dwellSections.forEach(function (wrapper, index) {
+          var state = dwellStates[index];
+          var target = getDwellTarget(wrapper);
+          var proximity = getDwellProximity(wrapper);
+          var distance = Math.abs(scrollPosition - target);
+
+          if (!state.armed || distance > proximity) return;
+          state.armed = false;
+          var reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+          window.scrollTo({ top: target, behavior: reducedMotion ? 'auto' : 'smooth' });
+        });
+      }, scrollSettleDelay);
+    }
+
+    function onDwellScroll() {
+      var currentScrollY = window.scrollY;
+      dwellSections.forEach(function (wrapper, index) {
+        var state = dwellStates[index];
+        var target = getDwellTarget(wrapper);
+        var proximity = getDwellProximity(wrapper);
+
+        if (!state.armed && Math.abs(currentScrollY - target) > proximity * 2) {
+          state.armed = true;
         }
-
-        section.style.transform = translate ? 'translateY(' + translate + 'px)' : '';
       });
-
-      dwellFrame = null;
+      scheduleDwellNudge();
     }
 
-    function scheduleDwellEase() {
-      if (dwellFrame !== null) return;
-      dwellFrame = window.requestAnimationFrame(updateDwellEase);
+    function isScrollKey(event) {
+      return ['ArrowDown', 'ArrowUp', 'PageDown', 'PageUp', 'Home', 'End', ' '].indexOf(event.key) !== -1;
     }
 
-    window.addEventListener('scroll', scheduleDwellEase, { passive: true });
-    window.addEventListener('resize', scheduleDwellEase);
-    updateDwellEase();
+    window.addEventListener('wheel', function (event) {
+      if (event.deltaY) userScrollIntent = true;
+    }, { passive: true });
+    window.addEventListener('keydown', function (event) {
+      if (isScrollKey(event) && !event.defaultPrevented) userScrollIntent = true;
+    });
+    window.addEventListener('scroll', onDwellScroll, { passive: true });
+
+    if (typeof touchPrimary.addEventListener === 'function') {
+      touchPrimary.addEventListener('change', updateDwellAvailability);
+    } else if (typeof touchPrimary.addListener === 'function') {
+      touchPrimary.addListener(updateDwellAvailability);
+    }
+    updateDwellAvailability();
   }
 }());
